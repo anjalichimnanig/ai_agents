@@ -19,8 +19,8 @@ def get_bank_information(user_query: str) -> dict:
         "what is the interest rate for a 1 year fixed deposit": "For a standard 1-year Fixed Deposit, the Bank currently offers an interest rate of 6.50% p.a. for general citizens and 7.00% p.a. for Senior Citizens. Rates are subject to change, so please check our 'Rates' page on the website for the most current figures." 
     }
 
-    print(user_query)
     user_query = user_query.lower().replace("?","")
+    print(user_query)
     if user_query in faq:
         print("Match with FAQ")
         result = faq.get(user_query)
